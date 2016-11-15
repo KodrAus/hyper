@@ -10,7 +10,7 @@ use http;
 use status::StatusCode;
 use version;
 
-type Body = ::tokio_proto::Body<http::Chunk, ::Error>;
+pub type Body = ::tokio_proto::Body<http::Chunk, ::Error>;
 
 /// The outgoing half for a Tcp connection, created by a `Server` and given to a `Handler`.
 ///
